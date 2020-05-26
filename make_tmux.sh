@@ -11,7 +11,7 @@ mkdir /usr/local/soft
 
 echo "Скачивание libevent"
 # DOWNLOAD SOURCES FOR LIBEVENT AND MAKE AND INSTALL
-curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o /usr/local/soft/libevent-stable.tar.gz > /dev/null && \
+curl -Lk https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz -o /usr/local/soft/libevent-stable.tar.gz > /dev/null 2>&1 && \
     echo "Ok"
 cd /usr/local/soft
 echo "Распаковка libevent"
@@ -25,7 +25,7 @@ echo "Ok"
 
 # DOWNLOAD SOURCES FOR TMUX AND MAKE AND INSTALL
 echo "Скачивание tmux"
-curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz /usr/local/soft/tmux.tar.gz  -o /usr/local/soft/tmux.tar.gz > /dev//null && \
+curl -Lk https://github.com/tmux/tmux/releases/download/2.8/tmux-2.8.tar.gz /usr/local/soft/tmux.tar.gz  -o /usr/local/soft/tmux.tar.gz > /dev//null 2>&1 && \
     echo "Ok"
 cd /usr/local/soft
 echo "Распаковка tmux"
